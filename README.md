@@ -13,6 +13,8 @@ To make the website fully accessible I applied these things:
 
 * I used all the relevant semantic HTML tags: header, nav, article, section, button and footer, so a screen reader can read out which content each specific element represents
 
+* I used heading tags in sequential order
+
 * I used an aria-label attribute in the opening anchor tag for the "logo" in the top left of the website. I used the aria-label to name this element "Home button". The reason for using an aria-label is that there isn't any relevant semantic tags for this purpose
 
 * I used color contrast to make everything clear and visible
