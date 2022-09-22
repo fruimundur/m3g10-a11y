@@ -8,17 +8,18 @@
     <title>Web A11y survey</title>
 </head>
 <body>
+    <header>
+        <a href="#" id="logo" aria-label="Home button">Web A11y</a>
+
+        <nav>
+            <a href="#">RESOURCES</a>
+            <a href="#">INFORMATION</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+
     <div id="container">
-        <header>
-            <a href="#" id="logo">Web A11y</a>
-
-            <ul>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Information</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </header>
-
+        
         <main>
             <div class="flexer">
                 
@@ -42,37 +43,41 @@
                 <p>Duis et risus aliquam, efficitur lorem sit amet, accumsan arcu. Sed ornare rhoncus eros nec vestibulum. Donec tristique lacus nisl, quis tristique turpis dapibus eu. Nulla quis varius ante, id egestas neque.</p>
             </article>
 
-            <section>
-                <label for="cars">Had you heard of Web Accessibility before? </label>
-                <div class="flexer2">
-                    <input type="radio" name="cars" id="cars">
-                        <option value="Yes">Yes</option>
-                    </input>
-                    <input type="radio" name="cars" id="cars">
-                        <option value="No">No</option>
-                    </input>
+            <section id="section1">
+                <label name="question1">Had you heard of Web Accessibility before?</label>
+                <div class="flexer2" aria-labelledby="question 1">                    
+                    <label><input type="radio" name="Yes" id="Yes">Yes</label>
+                    <label><input type="radio" name="No" id="No">No</label>
                 </div>
 
-                <label for="cars">Are you interested in learning more about Web Accessibility? </label>
+                <label for="question2">Are you interested in learning more about Web Accessibility?</label>
                 <div class="flexer2">
-                    <input type="radio" name="cars" id="cars">
-                        <option value="Yes">Yes</option>
-                    </input>
-                    <input type="radio" name="cars" id="cars">
-                        <option value="No">No</option>
-                    </input>
+                    <label><input type="radio" name="Yes" id="Yes">Yes</label>
+                    <label><input type="radio" name="No" id="No">No</label>
                 </div>
 
-                <label for="cars">Do you think it's important for developers to be mindful of Web Accessibility? </label>
+                <label for="question3">Do you think it's important for developers to be mindful of Web Accessibility?</label>
                 <div class="flexer2">
-                    <input type="radio" name="cars" id="cars">
-                        <option value="Yes">Yes</option>
-                    </input>
-                    <input type="radio" name="cars" id="cars">
-                        <option value="No">No</option>
-                    </input>
+                    <label><input type="radio" name="Yes" id="Yes">Yes</label>
+                    <label><input type="radio" name="No" id="No">No</label>
                 </div>
+            </section>
 
+            <section id="section2">
+                <div id="s2p">
+                <p>Thank you for your time!</p>
+                <p>Feel free to sign up for our weekly newsletter below</p>
+                </div>
+                <form>
+                    <label for="name" class="inputbox">Name</label><br>
+                    <input type="text" id="name" name="name" class="inputbox"><br>
+
+                    <label for="email" class="inputbox">Email</label><br>
+                    <input type="text" id="email" name="email" class="inputbox">
+                </form>
+                <div id="button">
+                    <button>Sign up!</button>
+                </div>
             </section>
 
 
